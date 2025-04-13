@@ -1,0 +1,47 @@
+/* Estilo para o menu horizontal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+nav {
+    background-color: darkblue;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+}
+
+nav ul li {
+    flex: 1;
+}
+nav ul li:hover {
+    background-color: #575757;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: red;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: darkblue
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+    color: red
+}
