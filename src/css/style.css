@@ -56,7 +56,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 200px;
-    background-color: lightgray;
+    background-color: white;
 
     border: solid 5px red;
     border-radius: 5px;
@@ -66,8 +66,7 @@ p {
 }
 
 table {
-    border-spacing: 20px;
-    border-collapse: separate;
+    text-align: center;
 }
 
 .produtos_vinhos div {
