@@ -44,134 +44,187 @@ nav ul li a:hover {
 }
   
 
-  h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: darkblue;
-  }
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: darkblue;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2.2rem;
+}
 
-  h2, h3 {
-    color: darkblue;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
-  }
+h2, h3 {
+  color: darkblue;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.6rem;
+}
 
-  p {
-    text-align: center;
-    margin-top: 20px;
-    color: red;
-  }
+/* PARÁGRAFOS */
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: red;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
 
-  .container {
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 40px 30px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
+/* CONTAINER COM ESTILO DE "FOLHA" */
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
 
-  .section {
-    margin-bottom: 40px;
-    padding: 20px;
+.container:hover {
+  transform: scale(1.005);
+}
+
+/* SEÇÕES */
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+/* GALERIA DE IMAGENS COM EFEITO */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+/* LINHA DO TEMPO */
+.timeline {
+  border-left: 3px solid darkblue;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* DEPOIMENTOS */
+.testimonial {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin: 10px 0;
+  border-left: 5px solid darkblue;
+  font-style: italic;
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: translateX(5px);
+}
+
+/* FORMULÁRIO */
+form {
+  background-color: #eef;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: darkblue;
+  outline: none;
+}
+
+/* BOTÃO DE ENVIO */
+input[type="submit"] {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: darkblue;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
   }
 
   .gallery {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .gallery img {
-    width: 220px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    background-color: #ccc;
+    width: 90%;
   }
 
-  .timeline {
-    border-left: 3px solid darkblue;
-    padding-left: 20px;
-    margin-top: 20px;
-  }
-
-  .timeline-item {
-    margin-bottom: 15px;
-    color: #333;
-  }
-
-  .testimonial {
-    background-color: #f1f1f1;
-    padding: 15px;
-    margin: 10px 0;
-    border-left: 5px solid darkblue;
-    font-style: italic;
-  }
-
-  form {
-    background-color: #eef;
-    padding: 20px;
-    border-radius: 8px;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 5px;
-    color: darkblue;
-    font-weight: bold;
-  }
-
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #999;
-    border-radius: 4px;
-  }
-
-  input[type="submit"] {
-    background-color: darkblue;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  input[type="submit"]:hover {
-    background-color: red;
-  }
-
-  footer {
-    background-color: darkblue;
-    color: white;
+  .container {
+    margin: 20px 10px;
     padding: 30px 20px;
-    text-align: center;
-    margin-top: 60px;
   }
-
-  footer a {
-    color: white;
-    text-decoration: underline;
-  }
-
-  @media (max-width: 600px) {
-    nav ul {
-      flex-direction: column;
-    }
-
-    .gallery {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .gallery img {
-      width: 90%;
-    }
-  }
+}
 </style>
 </head>
 <body>
