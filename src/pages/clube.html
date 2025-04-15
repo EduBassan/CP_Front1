@@ -5,6 +5,237 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Clube Agnello - Experiência Exclusiva</title>
 </head>
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: darkblue;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 5px;
+  display: flex;
+}
+
+nav ul li {
+  flex: 1;
+}
+
+nav ul li:hover {
+  background-color: #575757;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: red;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: darkblue;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 2.2rem;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: darkblue;
+  font-size: 1.8rem;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: red;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.005);
+}
+
+.section {
+  margin-bottom: 50px;
+  padding: 10px 0;
+}
+
+.plans {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.plan {
+  background-color: #eef;
+  padding: 25px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.plan h4 {
+  color: darkblue;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+.plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.plan ul li {
+  margin: 8px 0;
+  color: #333;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.gallery img {
+  width: 220px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #ccc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+form {
+  background-color: #eef;
+  padding: 25px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: darkblue;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: darkblue;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: darkblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: red;
+}
+
+footer {
+  background-color: darkblue;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    width: 90%;
+  }
+
+  .container {
+    margin: 20px 10px;
+    padding: 30px 20px;
+  }
+}
+
+</style>
 <body>
 
   <nav>
