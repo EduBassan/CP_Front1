@@ -1,28 +1,29 @@
-/* Estilo para o menu horizontal */
-* {
-    margin: 0;
+margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-nav {
+.menu {
     background-color: darkblue;
-}
-
-nav ul {
     list-style-type: none;
     padding: 5px;
     display: flex;
 }
 
-nav ul li {
+.menu ul {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+}
+
+.menu li {
     flex: 1;
 }
-nav ul li:hover {
+.menu li:hover {
     background-color: #575757;
 }
 
-nav ul li a {
+.menu li a {
     display: block;
     color: white;
     text-align: center;
@@ -30,20 +31,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+.menu li a:hover {
     background-color: red;
-}
-
-h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: darkblue
-}
-
-p {
-    text-align: center;
-    margin-top: 20px;
-    color: red
 }
 
 .produtos_vinhos {
@@ -83,6 +72,175 @@ table {
   font-weight: bold;
 }
 
+.inicio {
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inicio h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: red;
+    font-size: 50px
+}
+
+.inicio h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: darkblue;
+    font-size: 30px
+}
+
+.carousel {
+    background-color: red;
+    height: 450px;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 500px 100px;
+    grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  main#carousel {
+    grid-row: 1 / 2;
+    grid-column: 1 / 8;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+    pointer-events: none;
+  }
+  
+  div.item {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background-color: coral;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+  }
+  
+  div.item:nth-of-type(1) {
+    --offset: 1;
+    background-color: #90f1ef;
+  }
+  div.item:nth-of-type(2) {
+    --offset: 2;
+    background-color: #ff70a6;
+  }
+  div.item:nth-of-type(3) {
+    --offset: 3;
+    background-color: #ff9770;
+  }
+  div.item:nth-of-type(4) {
+    --offset: 4;
+    background-color: #ffd670;
+  }
+  
+  input:nth-of-type(1) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(1):checked ~ main#carousel {
+    --position: 1;
+  }
+  
+  input:nth-of-type(2) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(2):checked ~ main#carousel {
+    --position: 2;
+  }
+  
+  input:nth-of-type(3) {
+    grid-column: 4 /5;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(3):checked ~ main#carousel {
+    --position: 3;
+  }
+  
+  input:nth-of-type(4) {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+  }
+  input:nth-of-type(4):checked ~ main#carousel {
+    --position: 4;
+  }
+  
+.item img{
+    width: 300px;
+}
+
+.textos h2{
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 5px solid red;
+    border-radius: 15px;
+    background-color: darkblue;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.textos h3{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.textos p{
+    margin: 50px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.textos button{
+    margin-top: 30px;
+    margin-left: 590px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 3px darkblue;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.textos button a{
+    text-decoration: none;
+}
+
+.textos button:hover{
+    background-color: darkblue;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
 footer {
     background-color: #0a2342;
     color: white;
@@ -93,9 +251,22 @@ footer {
     line-height: 1.6;
     border-top: 5px solid #cc1f1a;
   }
+
+
+  footer p {
+        text-align: center;
+        margin-top: 20px;
+        color: #cc1f1a;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 1.05rem;
+        line-height: 1.8;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+      }
   
   footer a {
     color: #f7f7f7;
     text-decoration: underline;
-    font-weight: 500;
-  }
+    font-weight: 500;
+  }
