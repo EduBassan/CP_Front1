@@ -83,3 +83,20 @@ table {
     font-size: 20px;
   font-weight: bold;
 }
+
+footer {
+    background-color: #0a2342;
+    color: white;
+    padding: 40px 25px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1rem;
+    line-height: 1.6;
+    border-top: 5px solid #cc1f1a;
+  }
+  
+  footer a {
+    color: #f7f7f7;
+    text-decoration: underline;
+    font-weight: 500;
+  }
