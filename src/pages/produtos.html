@@ -7,9 +7,35 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <style>
-    body{
-        background-color: lightgrey;
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 30px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
     }
+
+    .produtos_vinhos {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .produtos_vinhos img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .produtos_vinhos div {
+      flex: 1;
+      min-width: 260px;
+    }
+    
+
 </style>
 <body>
 
@@ -27,6 +53,7 @@
         <H1>PRINCIPAIS VINHOS</H1>
     </header>
 
+    <div class="container">
     <section class="produtos_vinhos">
         <img src="../img/VInho1.avif" alt="Vinho1" width="250px">
         <div>
@@ -122,6 +149,7 @@
             </table>
         </div>
     </section>
+</div>
 
     <footer>
         <p>Vinheria Agnello • Rua dos Vinhos, 123 – São Paulo – SP</p>
