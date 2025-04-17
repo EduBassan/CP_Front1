@@ -303,6 +303,19 @@ table {
     border: none;
     cursor: pointer;
 }
+.botao {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #0a2342;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
 
 footer {
     background-color: #0a2342;
