@@ -11,10 +11,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 nav {
-  background-color: darkblue;
+  background-color: #0a2342;
 }
 
 nav ul {
@@ -40,13 +41,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: red;
+  background-color: rgb(102, 0, 0);
 }
 
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: darkblue;
+  color: #0a2342;
   font-family: 'Segoe UI', sans-serif;
   font-size: 2.2rem;
 }
@@ -55,17 +56,18 @@ h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: darkblue;
+  color: #0a2342;
   font-size: 1.8rem;
 }
 
 p {
   text-align: center;
   margin-top: 20px;
-  color: red;
+  color: rgb(102, 0, 0);
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 .container {
@@ -103,6 +105,7 @@ p {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
 }
 
 .plan:hover {
@@ -111,7 +114,7 @@ p {
 }
 
 .plan h4 {
-  color: darkblue;
+  color: #0a2342;
   margin-bottom: 12px;
   font-size: 1.2rem;
 }
@@ -160,7 +163,7 @@ form {
 label {
   display: block;
   margin-bottom: 5px;
-  color: darkblue;
+  color: #0a2342;
   font-weight: bold;
   font-size: 0.95rem;
 }
@@ -176,12 +179,12 @@ input, select, textarea {
 }
 
 input:focus, select:focus, textarea:focus {
-  border-color: darkblue;
+  border-color: #0a2342;
   outline: none;
 }
 
 input[type="submit"] {
-  background-color: darkblue;
+  background-color: #0a2342;
   color: white;
   border: none;
   cursor: pointer;
@@ -193,7 +196,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: red;
+  background-color: rgb(102, 0, 0);
 }
 
 footer {
@@ -204,7 +207,7 @@ footer {
   margin-top: 80px;
   font-size: 1rem;
   line-height: 1.6;
-  border-top: 5px solid #cc1f1a;
+  border-top: 5px solid rgb(102, 0, 0);
 }
 
 footer a {
@@ -212,6 +215,11 @@ footer a {
   text-decoration: underline;
   font-weight: 500;
 }
+
+footer>p{
+  color: white;
+}
+
 
 @media (max-width: 768px) {
   nav ul {
@@ -236,6 +244,7 @@ footer a {
     margin: 20px 10px;
     padding: 30px 20px;
   }
+
 }
 
 </style>

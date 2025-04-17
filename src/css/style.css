@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+a{
+  color: white;
+}
 nav {
-  background-color: darkblue;
+  background-color: #0a2342;
 }
 
 nav ul {
@@ -31,13 +35,13 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: red;
+  background-color: rgb(102, 0, 0);
 }
 
 h1 {
   text-align: center;
   margin-top: 20px;
-  color: darkblue;
+  color: #0a2342;
   font-family: 'Segoe UI', sans-serif;
   font-size: 2.2rem;
 }
@@ -46,23 +50,24 @@ h2 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: darkblue;
+  color: #0a2342;
   font-size: 1.8rem;
 }
 
 p {
   text-align: center;
   margin-top: 20px;
-  color: red;
+  color:  rgb(102, 0, 0);
   font-family: 'Segoe UI', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 
 
 .menu {
-    background-color: darkblue;
+    background-color: #0a2342;
     list-style-type: none;
     padding: 5px;
     display: flex;
@@ -90,7 +95,7 @@ p {
 }
 
 .menu li a:hover {
-    background-color: red;
+    background-color: rgb(102, 0, 0);
 }
 
 .produtos_vinhos {
@@ -141,19 +146,19 @@ table {
 .inicio h1 {
     text-align: center;
     margin-top: 20px;
-    color: red;
+    color:  rgb(102, 0, 0);
     font-size: 50px
 }
 
 .inicio h2 {
     text-align: center;
     margin-top: 20px;
-    color: darkblue;
+    color: #0a2342;
     font-size: 30px
 }
 
 .carousel {
-    background-color: red;
+    background-color:  rgb(102, 0, 0);
     height: 450px;
     margin: 0;
     display: grid;
@@ -249,9 +254,9 @@ table {
 .textos h2{
     margin-left: 400px;
     margin-right: 400px;
-    border: 5px solid red;
+    border: 5px solid  #0a2342;;
     border-radius: 15px;
-    background-color: darkblue;
+    background-color: #0a2342;
     color: white;
     font-size: 30px;
     text-align: center;
@@ -260,7 +265,7 @@ table {
 }
 
 .textos h3{
-    color: red;
+    color:  rgb(102, 0, 0);
     font-size: 30px;
     text-align: center;
     margin-top: 30px;
@@ -277,11 +282,11 @@ table {
 .textos button{
     margin-top: 30px;
     margin-left: 590px;
-    background-color: red;
+    background-color:  rgb(102, 0, 0);
     color: white;
     font-size: 20px;
     border-radius: 10px;
-    border: solid 3px darkblue;
+    border: solid 3px #0a2342;
     padding: 10px;
     cursor: pointer;
 }
@@ -291,7 +296,7 @@ table {
 }
 
 .textos button:hover{
-    background-color: darkblue;
+    background-color: rgb(102, 0, 0);
     font-size: 20px;
     border-radius: 10px;
     padding: 10px;
@@ -307,14 +312,14 @@ footer {
     margin-top: 80px;
     font-size: 1rem;
     line-height: 1.6;
-    border-top: 5px solid #cc1f1a;
+    border-top: 5px solid  rgb(102, 0, 0);
   }
 
 
   footer p {
         text-align: center;
         margin-top: 20px;
-        color: #cc1f1a;
+        color:  white;
         font-family: 'Segoe UI', sans-serif;
         font-size: 1.05rem;
         line-height: 1.8;
