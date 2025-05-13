@@ -1,3 +1,6 @@
+@import url('./efeitos.css'); 
+/* O import precisou estar no inicio para o funcionamento dos efeitos */
+
 * {
   margin: 0;
   padding: 0;
@@ -345,3 +348,6 @@ footer {
     color: #f7f7f7;
     text-decoration: underline;
     font-weight:500;}
+
+    /* @import url('../css/efeitos.css'); */
+
