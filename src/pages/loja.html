@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Conheça a loja da Vinheria Agnello"/>
   <meta name="keywords" content="Vinhos, Vinheria, Clube, História, Loja, Produtos">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Nossa Loja</title>
 </head>
 
@@ -187,11 +188,12 @@ input, textarea {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-input:focus, textarea:focus {
+/* input:focus, textarea:focus {
   border-color: #0a2342;
   outline: none;
   box-shadow: 0 0 0 2px rgba(10, 35, 66, 0.2);
-}
+  background-color: rgb(245, 244, 244);
+}  */
 
 input[type="submit"] {
   background-color: #0a2342;
@@ -320,7 +322,7 @@ footer>p{
 
     <section class="section">
       <h2>Agende uma Visita Guiada</h2>
-      <form>
+      <form id="form-agendamento">
         <label for="nome">Seu nome:</label>
         <input type="text" id="nome" name="nome" required>
 

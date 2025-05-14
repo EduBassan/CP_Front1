@@ -6,3 +6,23 @@
     background-color: rgb(102, 0, 0);
     transform: scale(1.1);
   }
+
+input:focus, select:focus, textarea:focus {
+  border-color: #0a2342;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(10, 35, 66, 0.2);
+  background-color: rgb(242, 242, 242);
+} 
+
+#qualidade a:any-link {
+  color: #0a2342;
+  font-weight: bold;
+}
+
+.produtos_vinhos img{
+  transition: transform 0.2s ease-in-out;
+}
+
+.produtos_vinhos img:hover {
+  transform: scale(110%);
+}

@@ -1,34 +1,66 @@
-# CP_Front1
-CP01 front end da vinheria
-Página Web da vinheria Agnello
+# 📄 CP_Front1 – Vinheria Agnello
 
-A vinheria tinha como diferencial sua interação com o cliente oferencendo um serviço personalizado para cada cliente de sua loja, entretanto com a chegada da pandemia, seu negócio foi prejudicado pela falta de clientes. Após isso o senhor Agnello cedeu e decidiu em investir em uma plataforma de vendas digital, permitindo assim que sua loja continue funcionando.
+**CP01 – Projeto Front-End da Vinheria Agnello**
 
-Neste projeto foram feitas 5 páginas:
-- A primeira página é o INDEX:
-O index é o HOME da página WEB, nela temos uma barra de navegação para as demais páginas.
+A Vinheria Agnello sempre se destacou pela interação com o cliente, oferecendo um serviço personalizado para cada visitante. No entanto, com a chegada da pandemia, o negócio foi prejudicado pela falta de movimento. Diante disso, o Sr. Agnello decidiu investir em uma **plataforma de vendas digital**, permitindo que a loja continuasse funcionando de forma online.
 
-- A segunda página é o PRODUTOS:
-Na página Produtos é apresentado todos os produtos da vinheria, mostrando imagens de cada produto acompanhado de suas principais características, como Matéria-Prima, Maturação e Paladar.
+---
 
-- A terceira página é o CLUBE:
-Nesta página é exibido uma forma de assinar uma inscrição do serviço da Vinheria, na qual possui 3 planos que oferecem uma experiencia ainda mais personalizada.
+## 📁 Estrutura do Projeto
 
-- A quarta página é a HISTÓRIA:
-Nesta página é contado a história da Vinheria, além de informações e diferenciais da loja.
+Este projeto conta com **5 páginas principais**:
 
-- A última página é a LOJA:
-Aqui é mostrado imagens da loja física da Vinheria Agnello, também é mostrado sua trajetória através dos anos, avaliações de clientes e uma forma de agendar sua visita. 
+### 1. 🏠 Index
+A página **Home** do site.  
+Contém uma **barra de navegação** que leva às demais páginas.
 
-Integrantes do Grupo:
-- Eduardo Santiago Bassan			RM: 561474
-- Vitor Fernandes dos Santos        RM: 566275
-- Henry Andrade Browne				RM: 562622
-- Joao Victor de Souza Abe			RM: 561446
+### 2. 🍷 Produtos
+Exibe todos os produtos da vinheria, com:
+- Imagens dos vinhos
+- Informações como:
+  - Matéria-Prima
+  - Fermentação
+  - Maturação
+  - Paladar e Teor Alcoólico
 
-Tecnologias:
-- HTML5
-- CSS
+### 3. 📝 Clube
+Página com a opção de **assinatura de serviço** da vinheria.  
+Apresenta 3 **planos personalizados** para os clientes.
 
-Link para a página:
-https://edubassan.github.io/CP_Front1/src/pages/produtos.html
+### 4. 📚 História
+Conta a história da vinheria e apresenta seus **diferenciais**.
+
+### 5. 🏪 Loja
+Mostra:
+- Imagens da **loja física**
+- Linha do tempo da trajetória
+- Avaliações de clientes
+- **Formulário para agendamento de visita**
+
+## 💫 Efeitos Visuais
+Foram adicionados:
+
+---
+
+## 👥 Integrantes do Grupo
+
+| Nome                        | RM       |
+|-----------------------------|----------|
+| Eduardo Santiago Bassan     | 561474   |
+| Vitor Fernandes dos Santos  | 566275   |
+| Henry Andrade Browne        | 562622   |
+| João Victor de Souza Abe    | 561446   |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5  
+- CSS3
+
+---
+
+## 🔗 Link do Projeto
+
+Acesse a página de produtos:  
+👉 [https://edubassan.github.io/CP_Front1/src/pages/produtos.html](https://edubassan.github.io/CP_Front1/src/pages/produtos.html)
