@@ -38,7 +38,8 @@ Mostra:
 - **Formulário para agendamento de visita**
 
 ## 💫 Efeitos Visuais
-Foram adicionados:
+**Novas features:**
+Na página "Nossa história" foi adicionada uma animação ao header "Vinheria Agnello". Agora a logo conta com transições suaves de opacidade (opacity) e tamanho (scale) criando um efeito de pulsão que aumenta a interatividade do site
 
 ---
 
