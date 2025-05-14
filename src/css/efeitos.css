@@ -26,3 +26,19 @@ input:focus, select:focus, textarea:focus {
 .produtos_vinhos img:hover {
   transform: scale(1.1) rotateY(180deg);
 }
+
+.header{
+  animation-duration: 10s;
+  animation-name: headeranimation;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+
+}
+@keyframes headeranimation {
+  25%{ opacity: 0.85; scale: 1.0;}
+  50%{ opacity: 1; scale: 1.05;}
+  75%{opacity: 0.85; scale: 1.0;}}
+  100%{opacity: 1; scale: 1.0;}}
+
+
+}
