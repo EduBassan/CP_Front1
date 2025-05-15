@@ -37,11 +37,52 @@ Mostra:
 - Avaliações de clientes
 - **Formulário para agendamento de visita**
 
-## 💫 Efeitos Visuais
-**Novas features:**
-Na página "Nossa história" foi adicionada uma animação ao header "Vinheria Agnello". Agora a logo conta com transições suaves de opacidade (opacity) e tamanho (scale) criando um efeito de pulsão que aumenta a interatividade do site
+## 💫 Efeitos Visuais Aplicados
+
+Foram adicionadas diversas melhorias visuais ao site da **Vinheria Agnello**, com foco em interatividade e refinamento estético por meio de animações e pseudo-classes CSS:
 
 ---
+
+### 🌐 Navegação
+- **Animações nos botões do menu:** ao passar o mouse (`:hover`), os botões aumentam de tamanho (`scale`) e rotacionam levemente (`rotate`) utilizando animações combinadas com `@keyframes`.
+
+---
+
+### 🏠 Página "Nossa História"
+- **Animação no cabeçalho "Vinheria Agnello":** adição de um efeito contínuo de pulsação com transições de opacidade e escala (`@keyframes`).
+- **Estilização de links:** uso da pseudo-classe `:any-link` para deixar o link **"Padrões de Qualidade"** em azul e negrito.
+
+---
+
+### 🔘 Botões do site
+- **Interatividade aprimorada:** com a pseudo-classe `:hover`, os botões mudam gradualmente de cor para vermelho e aumentam em 10% de tamanho (`transform: scale(1.1)`).
+- **Transição suave:** uso da propriedade `transition` para uma mudança fluida de cor e tamanho.
+
+---
+
+### 📝 Formulários
+- **Estilização ao foco:** aplicação da pseudo-classe `:focus` em `input`, `select` e `textarea`, modificando a cor da borda, plano de fundo e adicionando sombra externa (`box-shadow`), destacando os campos ativos.
+
+---
+
+### 🍷 Página "Produtos"
+- **Efeito visual nas imagens dos vinhos:** ao passar o mouse, as imagens aumentam de tamanho e giram horizontalmente (`rotateY(180deg)`), simulando um "flip".
+
+---
+
+### 🎉 Página "Clube"
+- **Adição de ícones decorativos:** uso dos pseudo-elementos `::before` e `::after` para incluir emojis ao redor do título, representando uvas e taças de vinho.
+
+---
+
+### 🖍️ Estilizações adicionais
+- **Primeira letra destacada:** com `::first-letter`, a primeira letra de parágrafos específicos foi aumentada, colorida e destacada visualmente.
+- **Seleção de texto personalizada:** com `::selection`, o fundo e a cor da seleção foram alterados para refletir a paleta da marca (vermelho escuro e branco).
+
+---
+
+Essas melhorias visam proporcionar uma experiência visual mais envolvente e alinhada com a identidade da Vinheria Agnello.
+
 
 ## 👥 Integrantes do Grupo
 
@@ -64,4 +105,5 @@ Na página "Nossa história" foi adicionada uma animação ao header "Vinheria A
 ## 🔗 Link do Projeto
 
 Acesse a página de produtos:  
-👉 [https://edubassan.github.io/CP_Front1/src/pages/produtos.html](https://edubassan.github.io/CP_Front1/src/pages/produtos.html)
+👉 [https://edubassan.github.io/CP_Front1/index.html](https://edubassan.github.io/CP_Front1/index.html)
+
