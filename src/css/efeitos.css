@@ -20,12 +20,18 @@ input:focus, select:focus, textarea:focus {
 }
 
 .menu li:hover {
-  animation: grow 0.3s ease-in-out forwards;
+  animation: grow 0.3s ease-in-out forwards, rotate 0.3s ease-in-out forwards;
 }
 
 @keyframes grow {
   to {
     transform: scale(1.2);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(2deg);
   }
 }
 
