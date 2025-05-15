@@ -19,6 +19,16 @@ input:focus, select:focus, textarea:focus {
   font-weight: bold;
 }
 
+.menu li:hover {
+  animation: grow 0.3s ease-in-out forwards;
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1.2);
+  }
+}
+
 .produtos_vinhos img{
   transition: transform 0.2s ease-in-out;
 }
