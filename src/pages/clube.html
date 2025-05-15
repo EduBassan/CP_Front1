@@ -53,6 +53,15 @@ h1 {
   color: #0a2342;
   font-family: 'Segoe UI', sans-serif;
   font-size: 2.2rem;
+  position: relative;
+}
+
+h1::before {
+  content: "🍇 ";
+}
+
+h1::after {
+  content: " 🍷";
 }
 
 h2 {
@@ -64,7 +73,7 @@ h2 {
 }
 
 p {
-  text-align: center;
+  text-align: justify;
   margin-top: 20px;
   color: rgb(102, 0, 0);
   font-family: 'Segoe UI', sans-serif;
@@ -187,6 +196,21 @@ input, select, textarea {
   background-color: aqua;
 } */
 
+input[type="submit"] {
+  background-color: #0a2342;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(102, 0, 0);
+}
 
 footer {
   background-color: #0a2342;
