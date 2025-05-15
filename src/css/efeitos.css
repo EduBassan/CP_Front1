@@ -53,8 +53,27 @@ input:focus, select:focus, textarea:focus {
 @keyframes headeranimation {
   25%{ opacity: 0.65; scale: 1.0;}
   50%{ opacity: 1; scale: 1.08;}
-  75%{opacity: 0.65; scale: 1.08;}}
+  75%{opacity: 0.65; scale: 1.08;}
   100%{opacity: 1; scale: 1.0;}}
 
+h1::before {
+  content: "🍇 ";
+}
 
+h1::after {
+  content: " 🍷";
+} 
+
+::selection {
+  background-color: #a20000;
+  color: white;
+}
+
+.first::first-letter {
+  font-size: 2rem;
+  color: #0a2342;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  margin-right: 6px;
 }
